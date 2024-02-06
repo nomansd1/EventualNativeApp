@@ -25,6 +25,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import Splash from './screens/Splash';
+import CreateRecord from './screens/CreateRecord';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -34,7 +35,8 @@ type SectionProps = PropsWithChildren<{
 function App(): React.JSX.Element {
   return (
     <SafeAreaView style={styles.container}>
-      <Splash/>
+      {/* <Splash/> */}
+      <CreateRecord/>
     </SafeAreaView>
   );
 }
